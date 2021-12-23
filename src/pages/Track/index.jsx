@@ -22,7 +22,7 @@ export default () => {
         
         .then(({ data: r }) => {
             result.innerHTML = '';
-            h2.innerText = `URL: ${r.url}\n\nCreation Date: ${r.create}\n\nClicks: ${r.clicks}`;
+            h2.innerText = `URL: ${r.url}\n\nCreation Date: ${r.create}`;
             h2.style.color = 'black';
         
         })

@@ -1,5 +1,5 @@
 import { Container, Redirect } from "./style"
-import { get, post } from 'axios';
+import { get } from 'axios';
 import {useEffect, useState} from "react";
 
 export default () => {
@@ -8,13 +8,7 @@ export default () => {
     useEffect(async () => {
         await get('https://api-anonurl.herokuapp.com/api/redirect' + window.location.pathname)
         
-        .then(async r => {
-            setResult(r);
-
-            await post('https://api-anonurl.herokuapp.com/api/update', {
-                id: window.location.pathname.split('/')[1]
-            });
-        })
+        .then(async r => setResult(r))
         
         .catch(e => {
             console.log(e)
