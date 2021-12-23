@@ -26,7 +26,7 @@ export default () => {
             img.style.marginTop = '20px';
             span.append(br, img);
 
-            await post(process.env.API_URI + '/api/create', {
+            await post('https://api-anonurl.herokuapp.com/api/create', {
                 url: url.value
             })
 
