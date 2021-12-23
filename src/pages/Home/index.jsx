@@ -13,7 +13,8 @@ export default () => {
     const handleShorten = async () => {
         const url = document.querySelector('#url');
         const span = document.querySelector('.shortened');
-        
+        span.innerHTML = '';
+
         if (url.value.indexOf('http') === -1) {
             alert('Invalid URL address, you\'ve used "http://" or "https://"?');
             url.value = '';
