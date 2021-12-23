@@ -30,7 +30,7 @@ export const Shortener = styled.div`
     margin: auto;
     border-radius: 5px;
     padding-bottom: 30px;
-    box-shadow: 1px 1px 3px 3px ${props => props.theme.bodyPrimary};
+    box-shadow: 1px 1px 3px 3px ${props => props.theme.bodySecondary};
 
     h2 {
         font: 12pt 'JetBrains Mono', monospace;

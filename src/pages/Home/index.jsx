@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import { Container, ShortenerArea, Shortener, About, Whyuse, Cards } from './style';
@@ -10,13 +9,30 @@ import Loading from '../../assets/loading.gif';
 import { ThemeProvider } from 'styled-components';
 import { light, dark } from '../../styles/themes';
 import { en, pt } from '../../assets/locales';
+import { useEffect, useState } from 'react';
 
 export default () => {
+    useEffect(() => {
+        const themeStoraged = localStorage.getItem('theme');
+        const langStoraged = localStorage.getItem('lang');
+
+        if (!themeStoraged) {
+            localStorage.setItem('theme', 'light');
+
+        }
+        
+        if (!langStoraged) {
+            localStorage.setItem('lang', 'en');
+            window.location.reload();
+
+        }
+
+
+    }, [window.onload]);
+
     const theme = localStorage.getItem('theme');
     document.body.style.backgroundColor = theme === 'light' ? light.bodySecondary : dark.bodySecondary;
-
-    const langStoraged = localStorage.getItem('lang');
-    const lang = langStoraged === 'en' ? en : pt;
+    const lang = localStorage.getItem('lang') === 'en' ? en : pt;
 
     const handleShorten = async () => {
         const url = document.querySelector('#url');
