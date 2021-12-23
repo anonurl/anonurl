@@ -9,15 +9,15 @@
 [FAQ](https://github.com/anonurl/anonurl#faq)<br>
 [Setup](https://github.com/anonurl/anonurl#setup)<br>
 
-<a name="changelog"></a>
+<br><a name="changelog"></a>
 ## ♻️ Changelog (v1.0.0)
 - Initial commit
 
-<a name="usedtech"></a>
+<br><a name="usedtech"></a>
 ## ⚙️ Used technologies:
 - ReactJS
 
-<a name="faq"></a>
+<br><a name="faq"></a>
 ## ❓ FAQ
 #### How much anonymous is that?
 We can't save any access logs, in server-side, the usage don't keep any registry.
@@ -25,7 +25,7 @@ We can't save any access logs, in server-side, the usage don't keep any registry
 #### Why did you do that?
 I missed anonymous services like that and decided to do my own service.
 
-<a name="setup"></a>
+<br><a name="setup"></a>
 ## 🔧 Setup
 ### Clone this repository:
 `git clone https://github.com/anonurl/anonurl`
