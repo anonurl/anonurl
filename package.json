@@ -1,0 +1,37 @@
+{
+  "name": "anonurl",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "src/index.jsx",
+  "proxy": "https://api-anonurl.herokuapp.com",
+  "scripts": {
+    "start": "react-scripts start",
+    "start:build": "serve -l 3000 -s build",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build"
+  },
+  "dependencies": {
+    "axios": "^0.24.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-is": "^17.0.2",
+    "react-router-dom": "^6.2.1",
+    "react-scripts": "4.0.3",
+    "serve": "^13.0.2",
+    "styled-components": "^5.3.3"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/plugin-proposal-private-property-in-object": "^7.16.5"
+  }
+}
