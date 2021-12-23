@@ -24,9 +24,9 @@ export default () => {
             img.src = Loading;
             img.width = 60;
             img.style.marginTop = '20px';
-            span.append(br, img)
+            span.append(br, img);
 
-            await post('/api/create', {
+            await post(process.env.API_URI + '/api/create', {
                 url: url.value
             })
 
