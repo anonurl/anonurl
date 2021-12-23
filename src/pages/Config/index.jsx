@@ -10,10 +10,8 @@ export default () => {
     const langStoraged = localStorage.getItem('lang');
     const actualLang = langStoraged === 'en' ? en : pt;
     
-    const [theme, setTheme] = useState('light');
-    const [lang, setLang] = useState('en');
-    
-    document.body.style.backgroundColor = theme === 'light' ? light.bodyPrimary : dark.bodyPrimary;
+    const [theme, setTheme] = useState(localStorage.getItem('theme'));
+    const [lang, setLang] = useState(localStorage.getItem('lang'));
 
     useEffect(() => {
         const themeStoraged = localStorage.getItem('theme');
@@ -42,6 +40,8 @@ export default () => {
         }
 
     }, [window]);
+
+    document.body.style.backgroundColor = theme === 'light' ? light.bodyPrimary : dark.bodyPrimary;
 
     const handleTheme = () => {
         const themeSelector = document.querySelector('#themeSelector');
