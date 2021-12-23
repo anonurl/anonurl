@@ -4,6 +4,7 @@
   "license": "MIT",
   "main": "src/index.jsx",
   "proxy": "https://api-anonurl.herokuapp.com",
+  "homepage": "/",
   "scripts": {
     "build": "react-scripts build",
     "start:build": "serve -l 3000 -s build",

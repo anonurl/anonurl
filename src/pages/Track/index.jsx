@@ -39,15 +39,17 @@ export default () => {
     }
 
     return (
-        <Container>
+        <>
             <Header />
-            <Tracker>
-                <h2>Track any ID or URL</h2>
-                <input type="url" onKeyDown={e => e.key === 'Enter' && handleTrack()} id="track" placeholder="Enter the URL or ID" />
-                <button onClick={() => handleTrack()}>Search</button>
-                <span className="result"></span>
-            </Tracker>
+            <Container>
+                <Tracker>
+                    <h2>Track any ID or URL</h2>
+                    <input type="url" onKeyDown={e => e.key === 'Enter' && handleTrack()} id="track" placeholder="Enter the URL or ID" />
+                    <button onClick={() => handleTrack()}>Search</button>
+                    <span className="result"></span>
+                </Tracker>
+            </Container>
             <Footer />
-        </Container>
+        </>
     );
 }

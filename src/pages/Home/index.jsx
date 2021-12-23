@@ -43,38 +43,40 @@ export default () => {
     }
 
     return (
-        <Container>
+        <>
             <Header />
-            <ShortenerArea>
-                <Shortener className="shortener">
-                    <h2>Anonymous, free and open-source</h2>
-                    <h2>No logs and tracking</h2>
-                    <input type="url" id="url" onKeyDown={e => e.key === 'Enter' && handleShorten()} placeholder="Enter the link" />
-                    <button onClick={() => handleShorten()}>Shorten</button>
-                    <span className="shortened"></span>
-                </Shortener>
-            </ShortenerArea>
-            <About>
-                <h1>Why use AnonURL</h1>
-                <Whyuse>
-                    <p>Anonymous, free, open-source, easy-to-use, shortened URLs, nothing about logs, security improved...</p>
-                </Whyuse>
-                <Cards>
-                    <section>
-                        <img title="by Flaticon" src={ Anonymous } width="200" />
-                        <p>We don't keep access logs and who created any shortened URL</p>
-                    </section>
-                    <section>
-                        <img title="by Flaticon" src={ Scan } width="200" />
-                        <p>Suspicious of any URL? Check all about <Link to="/track">here</Link></p>
-                    </section>
-                    <section>
-                        <img title="by Flaticon" src={ Report } width="200" />
-                        <p>You can report any malicious shortened URL by <Link to="/report">clicking here</Link></p>
-                    </section>
-                </Cards>
-            </About>
+            <Container>
+                <ShortenerArea>
+                    <Shortener className="shortener">
+                        <h2>Anonymous, free and open-source</h2>
+                        <h2>No logs and tracking</h2>
+                        <input type="url" id="url" onKeyDown={e => e.key === 'Enter' && handleShorten()} placeholder="Enter the link" />
+                        <button onClick={() => handleShorten()}>Shorten</button>
+                        <span className="shortened"></span>
+                    </Shortener>
+                </ShortenerArea>
+                <About>
+                    <h1>Why use AnonURL</h1>
+                    <Whyuse>
+                        <p>Anonymous, free, open-source, easy-to-use, shortened URLs, nothing about logs, security improved...</p>
+                    </Whyuse>
+                    <Cards>
+                        <section>
+                            <img title="by Flaticon" src={ Anonymous } width="200" />
+                            <p>We don't keep access logs and who created any shortened URL</p>
+                        </section>
+                        <section>
+                            <img title="by Flaticon" src={ Scan } width="200" />
+                            <p>Suspicious of any URL? Check all about <Link to="/track">here</Link></p>
+                        </section>
+                        <section>
+                            <img title="by Flaticon" src={ Report } width="200" />
+                            <p>You can report any malicious shortened URL by <Link to="/report">clicking here</Link></p>
+                        </section>
+                    </Cards>
+                </About>
+            </Container>
             <Footer />
-        </Container>
+        </>
     );
 }

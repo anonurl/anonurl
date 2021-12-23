@@ -19,14 +19,16 @@ export default () => {
     }
 
     return (
-        <Container>
+        <>
             <Header />
-            <Report>
-                <h2>Do you have any suspicious URL or comment? Send a message to us!</h2>
-                <textarea rows="5" maxrows="5" id="report" onKeyDown={e => e.key === 'Enter' && handleSubmit()} placeholder="Enter the message" />
-                <button onClick={() => handleSubmit()}>Send report</button>
-            </Report>
+            <Container>
+                <Report>
+                    <h2>Do you have any suspicious URL or comment? Send a message to us!</h2>
+                    <textarea rows="5" maxrows="5" id="report" onKeyDown={e => e.key === 'Enter' && handleSubmit()} placeholder="Enter the message" />
+                    <button onClick={() => handleSubmit()}>Send report</button>
+                </Report>
+            </Container>
             <Footer />
-        </Container>
+        </>
     );
 }
