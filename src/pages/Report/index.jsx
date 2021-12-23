@@ -7,7 +7,7 @@ export default () => {
     const handleSubmit = async () => {
         const report = document.querySelector('#report').value;
 
-        await post('/api/report', {
+        await post('https://api-anonurl.herokuapp.com/api/report', {
             message: report
         })
 

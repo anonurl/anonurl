@@ -18,7 +18,7 @@ export default () => {
         img.style.marginTop = '20px';
         result.append(br, img);
 
-        await get('/api/track/' + track.value)
+        await get('https://api-anonurl.herokuapp.com/api/track/' + track.value)
         
         .then(({ data: r }) => {
             result.innerHTML = '';
