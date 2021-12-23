@@ -14,6 +14,10 @@ export const Container = styled.footer`
         margin-left: -45px;
     }
 
+    nav ul {
+        list-style: none;
+    }
+
     nav ul li {
         display: inline-block;
         margin-left: 10px;

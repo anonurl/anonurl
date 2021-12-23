@@ -3,7 +3,7 @@ import { Container } from './style';
 
 export default () => {
     useEffect(() => {
-        const footer = document.getElementsByTagName('footer')[0];
+        const footer = document.querySelector('.footer');
         
         if (window.location.pathname === '/') {
             footer.style.bottom = (-(document.documentElement.scrollHeight - document.documentElement.clientHeight) -150) + 'px';
@@ -21,7 +21,7 @@ export default () => {
     }, [window])
 
     return (
-        <Container>
+        <Container className="footer">
             <nav>
                 <ul>
                     <li>&copy; 2021 AnonURL</li>
