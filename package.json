@@ -5,9 +5,9 @@
   "main": "src/index.jsx",
   "proxy": "https://api-anonurl.herokuapp.com",
   "scripts": {
-    "build": "react-scripts start",
+    "build": "react-scripts build",
     "start:build": "serve -l 3000 -s build",
-    "start": "react-scripts build"
+    "start": "react-scripts start"
   },
   "dependencies": {
     "axios": "^0.24.0",

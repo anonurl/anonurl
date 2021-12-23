@@ -25,7 +25,7 @@ export default () => {
             <nav>
                 <ul>
                     <li>&copy; 2021 AnonURL</li>
-                    <li><a href="https://github.com/anonurl/anonurl" target="_blank">Source</a></li>
+                    <li><a href="https://github.com/anonurl/" target="_blank">Source</a></li>
                     <li><a href="mailto:z3ox1s@protonmail.com" target="_blank">Contact</a></li>
                     <li><a href="https://www.flaticon.com/" target="_blank">Flaticon</a></li>
                 </ul>
