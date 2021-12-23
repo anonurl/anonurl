@@ -2,54 +2,69 @@ import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import { Container, Tracker } from './style';
 import { get } from 'axios';
-
 import Loading from '../../assets/loading.gif';
+import { ThemeProvider } from 'styled-components';
+import { dark, light } from '../../styles/themes';
+import { en, pt } from '../../assets/locales';
 
 export default () => {
+    const langStoraged = localStorage.getItem('lang');
+    const lang = langStoraged === 'en' ? en : pt;
+
+    const theme = localStorage.getItem('theme');
+    document.body.style.backgroundColor = theme === 'light' ? light.bodyPrimary : dark.bodyPrimary;
+
     const handleTrack = async () => {
         const track = document.querySelector('#track');
-        const result = document.querySelector('.result');
-        const h2 = document.createElement('h2');
 
-        const img = document.createElement('img');                                                                          
-        const br = document.createElement('br');                                                                            
-        img.src = Loading;                                                                                                                                         
-        img.width = 60;                                                                                                                          
-        img.style.marginTop = '20px';
-        result.append(br, img);
+        if (track.value !== '') {
+            const result = document.querySelector('.result');
+            const h2 = document.createElement('h2');
 
-        await get('https://api-anonurl.herokuapp.com/api/track/' + track.value)
+            const img = document.createElement('img');                                                                          
+            const br = document.createElement('br');                                                                            
+            img.src = Loading;                                                                                                                                         
+            img.width = 60;                                                                                                                          
+            img.style.marginTop = '20px';
+            result.append(br, img);
+
+            await get('https://api-anonurl.herokuapp.com/api/track/' + track.value)
+            
+            .then(({ data: r }) => {
+                result.innerHTML = '';
+                h2.innerText = `URL: ${r.url}\n\n${ lang.track.creation } ${r.create}`;
+            
+            })
+
+            .catch(() => {
+                result.innerHTML = '';
+                h2.innerText = lang.track.notfound;
+                track.value = '';
+                h2.style.color = '#ff3333';
+
+            });
+
+            result.append(h2);
         
-        .then(({ data: r }) => {
-            result.innerHTML = '';
-            h2.innerText = `URL: ${r.url}\n\nCreation Date: ${r.create}`;
-            h2.style.color = 'black';
-        
-        })
+        } else {
+            alert(lang.track.empty);
+            track.focus;
 
-        .catch(() => {
-            result.innerHTML = '';
-            h2.innerText = 'URL/ID not founded on database.'
-            track.value = '';
-            h2.style.color = '#ff3333';
-
-        });
-
-        result.append(h2);
+        }
     }
 
     return (
-        <>
+        <ThemeProvider theme={ localStorage.getItem('theme') === 'light' ? light : dark }>
             <Header />
             <Container>
                 <Tracker>
-                    <h2>Track any ID or URL</h2>
-                    <input type="url" onKeyDown={e => e.key === 'Enter' && handleTrack()} id="track" placeholder="Enter the URL or ID" />
-                    <button onClick={() => handleTrack()}>Search</button>
+                    <h2>{ lang.track.title }</h2>
+                    <input type="url" onKeyDown={e => e.key === 'Enter' && handleTrack()} id="track" placeholder={ lang.track.placeholder } />
+                    <button onClick={() => handleTrack()}>{ lang.track.button }</button>
                     <span className="result"></span>
                 </Tracker>
             </Container>
             <Footer />
-        </>
+        </ThemeProvider>
     );
 }

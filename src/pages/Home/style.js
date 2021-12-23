@@ -2,11 +2,15 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300&display=swap');
+
+body {
+    background-color: blue;
+}
 `;
 
 export const ShortenerArea = styled.div`
-    background-color: #3366ff;
-    color: white;
+    background-color: ${props => props.theme.bodyPrimary};
+    color: ${props => props.theme.fontColor};
     float: none;
     height: 100vh;
     position: absolute;
@@ -19,18 +23,18 @@ export const ShortenerArea = styled.div`
 `;
 
 export const Shortener = styled.div`
-    background-color: white;
-    color: black;
+    background-color: ${props => props.theme.bodySecondary};
+    color: ${props => props.theme.fontColor};
     width: 60%;
     text-align: center;
     margin: auto;
     border-radius: 5px;
     padding-bottom: 30px;
-    box-shadow: 1px 1px 3px 1px rgb(170, 170, 170);
+    box-shadow: 1px 1px 3px 3px ${props => props.theme.bodyPrimary};
 
     h2 {
         font: 12pt 'JetBrains Mono', monospace;
-        color: rgb(130, 130, 130);
+        color: ${props => props.theme.titleColor};
     }
 
     h2:first-child {
@@ -40,6 +44,8 @@ export const Shortener = styled.div`
     input[type="url"] {
         border: solid 1px rgb(210, 210, 210);
         border-radius: 5px;
+        color: ${props => props.theme.fontColor};
+        background-color: ${props => props.theme.inputBackground};
         padding: 8px;
         width: 60%;
         outline: none;
@@ -50,9 +56,9 @@ export const Shortener = styled.div`
     button {
         border: none;
         border-radius: 5px;
-        background-color: #3366ff;
+        background-color: ${props => props.theme.bodyPrimary};
         padding: 9px;
-        color: white;
+        color: ${props => props.theme.inputColor};
         font: 12pt 'JetBrains Mono', monospace;
         transition: all ease 0.5s;
         cursor: pointer;
@@ -64,7 +70,7 @@ export const Shortener = styled.div`
     }
 
     a {
-        color: black;
+        color: ${props => props.theme.fontColor};
         text-decoration: none;
     }
 
@@ -92,13 +98,14 @@ export const Shortener = styled.div`
 `;
 
 export const About = styled.div`
-    background-color: white;
+    background-color: ${props => props.theme.bodySecondary};
     height: 100vh;
     position: absolute;
     top: 100vh;
     right: 0;
     left: 0;
     text-align: center;
+    color: ${props => props.theme.fontColor};
 
     h1 {
         font: 34pt 'JetBrains Mono', monospace;
@@ -115,8 +122,8 @@ export const About = styled.div`
 export const Whyuse = styled.div`
     margin: 0 auto;
     text-align: center;
-    background-color: #3366ff;
-    color: white;
+    background-color: ${props => props.theme.bodyPrimary};
+    color: ${props => props.theme.fontColor};
     width: 60%;
     padding: 10px;
     border-radius: 5px;
@@ -157,7 +164,7 @@ export const Cards = styled.div`
         margin: 0 auto;
         margin-right: 30px;
         margin-top: 40px;
-        background-color: #3366ff;
+        background-color: ${props => props.theme.bodyPrimary};
         transition: all ease 0.2s;
     }
 
@@ -173,7 +180,7 @@ export const Cards = styled.div`
     }
 
     section p a {
-        color: black;
+        color: ${props => props.theme.aColor};
         text-decoration: none;
     }
 

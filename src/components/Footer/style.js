@@ -2,8 +2,8 @@ import styled from 'styled-components';
 
 export const Container = styled.footer`
     z-index: 999;
-    color: black;
-    background-color: rgb(240, 240, 240, 0.8);
+    color: ${props => props.theme.fontColor};
+    background-color: ${props => props.theme.footerBackgroundColor};
     font: 12pt 'JetBrains Mono', monospace;
     position: absolute; 
     left: 0;
@@ -29,7 +29,7 @@ export const Container = styled.footer`
 
     nav ul li a {
         text-decoration: none;
-        color: #3366ff;
+        color: ${props => props.theme.footerTitleColor};
     }
 
     nav ul li a:hover {

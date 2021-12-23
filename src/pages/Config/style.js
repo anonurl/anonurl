@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
     background-color: ${props => props.theme.bodyPrimary};
-    color: ${props => props.theme.fontColor};
     float: none;
     position: absolute;
     left: 0;
@@ -17,9 +16,9 @@ export const Container = styled.div`
     }
 `;
 
-export const Redirect = styled.div`
+export const Config = styled.div`
     background-color: ${props => props.theme.bodySecondary};
-    color: ${props => props.theme.inputColor};
+    color: ${props => props.theme.fontColor};
     width: 60%;
     text-align: center;
     margin: auto;
@@ -38,32 +37,22 @@ export const Redirect = styled.div`
         padding-top: 25px;
     }
 
-    button {
-        border: none;
-        border-radius: 5px;
-        background-color: ${props => props.theme.bodyPrimary};
-        padding: 9px;
-        color: ${props => props.theme.inputColor};
-        font: 12pt 'JetBrains Mono', monospace;
-        transition: all ease 0.5s;
-        cursor: pointer;
-        margin: 10px 10px 0 10px;
+    h2:not(:first-child) {
+        margin-top: 30px;
     }
 
-    button:hover {
-        transform: scale(1.1);
-        opacity: 0.8;
+    select {
+        margin-top: 10px;
+        border: none;
+        background-color: ${props => props.theme.bodyPrimary};
+        padding: 7px;
+        border-radius: 5px;
+        color: white;
+        font: 11pt 'JetBrains Mono', monospace;
     }
 
     @media (max-width: 800px) {
         width: 90%;
         margin-top: 20vh;
-
-        button {
-            width: 30%;
-            padding: 14px;
-            margin-top: 30px;
-            font-size: 13pt;
-        }
     }
 `;

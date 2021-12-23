@@ -5,10 +5,12 @@ export const Container = styled.div`
 
     h1 {
         font: 80pt bold, 'JetBrains Mono', monospace;
+        color: ${props => props.theme.fontColor}
     }
 
     h2 {
         font: 20pt bold, 'JetBrains Mono', monospace;
+        color: ${props => props.theme.fontColor}
     }
     
     @media (max-width: 800px) {

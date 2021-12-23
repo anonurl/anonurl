@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    background-color: #3366ff;
-    color: white;
+    background-color: ${props => props.theme.bodyPrimary};
+    color: ${props => props.theme.fontColor};
     float: none;
     position: absolute;
     left: 0;
@@ -18,18 +18,18 @@ export const Container = styled.div`
 `;
 
 export const Tracker = styled.div`
-    background-color: white;
-    color: black;
+    background-color: ${props => props.theme.bodySecondary};
+    color: ${props => props.theme.fontColor};
     width: 60%;
     text-align: center;
     margin: auto;
     border-radius: 5px;
     padding-bottom: 30px;
-    box-shadow: 1px 1px 3px 1px rgb(170, 170, 170);
+    box-shadow: 1px 1px 3px 1px ${props => props.theme.bodySecondary};
 
     h2 {
         font: 12pt 'JetBrains Mono', monospace;
-        color: rgb(130, 130, 130);
+        color: ${props => props.theme.titleColor};
         width: 80%;
         margin: 0 auto;
     }
@@ -39,6 +39,8 @@ export const Tracker = styled.div`
     }
 
     input[type="url"] {
+        background-color: ${props => props.theme.inputBackground};
+        color: ${props => props.theme.fontColor};
         border: solid 1px rgb(210, 210, 210);
         border-radius: 5px;
         padding: 8px;
@@ -51,9 +53,9 @@ export const Tracker = styled.div`
     button {
         border: none;
         border-radius: 5px;
-        background-color: #3366ff;
+        background-color: ${props => props.theme.bodyPrimary};
         padding: 9px;
-        color: white;
+        color: ${props => props.theme.inputColor};
         font: 12pt 'JetBrains Mono', monospace;
         transition: all ease 0.5s;
         cursor: pointer;
@@ -62,6 +64,10 @@ export const Tracker = styled.div`
     button:hover {
         transform: scale(1.1);
         opacity: 0.8;
+    }
+
+    span h2 {
+        color: ${props => props.theme.fontColor};
     }
 
     @media (max-width: 800px) {

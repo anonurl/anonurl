@@ -1,8 +1,14 @@
 import { Container, Redirect } from "./style"
 import { get } from 'axios';
-import {useEffect, useState} from "react";
+import { useEffect, useState } from "react";
+import { ThemeProvider } from "styled-components";
+import { dark, light } from "../../styles/themes";
+import { en, pt } from '../../assets/locales';
 
 export default () => {
+    const langStoraged = localStorage.getItem('lang');
+    const lang = langStoraged === 'en' ? en : pt;
+
     const [result, setResult] = useState({});
     
     useEffect(async () => {
@@ -10,8 +16,7 @@ export default () => {
         
         .then(async r => setResult(r))
         
-        .catch(e => {
-            console.log(e)
+        .catch(() => {
             window.location.href = '/404';
         
         });
@@ -23,12 +28,14 @@ export default () => {
     const handleCancel = () => window.location.href = '/';
 
     return (
-        <Container className="container">
-            <Redirect className="app">
-                <h2>You'll be redirected to: {result.data}</h2>
-                <button onClick={() => handleGo()}>Agree</button>
-                <button onClick={() => handleCancel()}>Cancel</button>
-            </Redirect>
-        </Container>
+        <ThemeProvider theme={ localStorage.getItem('theme') === 'light' ? light : dark }>
+            <Container className="container">
+                <Redirect className="app">
+                    <h2>{ lang.redirect.willbe } {result.data}</h2>
+                    <button onClick={() => handleGo()}>{ lang.redirect.agree }</button>
+                    <button onClick={() => handleCancel()}>{ lang.redirect.cancel }</button>
+                </Redirect>
+            </Container>
+        </ThemeProvider>
     )
 }
