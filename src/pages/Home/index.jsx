@@ -7,22 +7,30 @@ import { post } from 'axios';
 import Anonymous from '../../assets/anonymous.png';
 import Scan from '../../assets/scan.png';
 import Report from '../../assets/report.png';
+import Loading from '../../assets/loading.gif';
 
 export default () => {
     const handleShorten = async () => {
         const url = document.querySelector('#url');
-
+        const span = document.querySelector('.shortened');
+        
         if (url.value.indexOf('http') === -1) {
             alert('Invalid URL address, you\'ve used "http://" or "https://"?');
             url.value = '';
         
         } else {
+            const img = document.createElement('img');
+            const br = document.createElement('br');
+            img.src = Loading;
+            img.width = 60;
+            img.style.marginTop = '20px';
+            span.append(br, img)
+
             await post('/api/create', {
                 url: url.value
             })
 
             .then(({ data }) => {
-                const span = document.querySelector('.shortened');
                 span.innerHTML = '';
 
                 const h2 = document.createElement('h2');

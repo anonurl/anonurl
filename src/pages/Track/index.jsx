@@ -3,22 +3,32 @@ import Header from '../../components/Header';
 import { Container, Tracker } from './style';
 import { get } from 'axios';
 
+import Loading from '../../assets/loading.gif';
+
 export default () => {
     const handleTrack = async () => {
         const track = document.querySelector('#track');
         const result = document.querySelector('.result');
         const h2 = document.createElement('h2');
-        result.innerHTML = '';
+
+        const img = document.createElement('img');                                                                          
+        const br = document.createElement('br');                                                                            
+        img.src = Loading;                                                                                                                                         
+        img.width = 60;                                                                                                                          
+        img.style.marginTop = '20px';
+        result.append(br, img);
 
         await get('/api/track/' + track.value)
         
         .then(({ data: r }) => {
+            result.innerHTML = '';
             h2.innerText = `URL: ${r.url}\n\nCreation Date: ${r.create}\n\nClicks: ${r.clicks}`;
             h2.style.color = 'black';
         
         })
 
         .catch(() => {
+            result.innerHTML = '';
             h2.innerText = 'URL/ID not founded on database.'
             track.value = '';
             h2.style.color = '#ff3333';
