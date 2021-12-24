@@ -89,7 +89,6 @@ export const Shortener = styled.div`
         }
 
         button {
-            width: 30%;
             padding: 14px;
             margin-top: 30px;
             font-size: 13pt;

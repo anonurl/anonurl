@@ -22,7 +22,7 @@ export const Container = styled.div`
 
     nav ul li {
         list-style: none;
-        padding-right: 30px;
+        padding-right: 20px;
         display: inline-block;
         transition: all ease 0.5s;
     }
@@ -36,5 +36,11 @@ export const Container = styled.div`
     nav ul li:hover {
         transform: scale(1.1);
         opacity: 0.8;
+    }
+
+    @media (max-width: 800px) {
+        nav ul li {
+            padding-right: 12px;
+        }
     }
 `;
