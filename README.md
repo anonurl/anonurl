@@ -10,11 +10,8 @@
 [Setup](https://github.com/anonurl/anonurl#setup)<br>
 
 <br><a name="changelog"></a>
-## ♻️ Changelog (v1.0.1)
-- Little fixes
-- Added config page
-- Added light/dark themes
-- Added language selector (Portuguese and English for now)
+## ♻️ Changelog (v1.0.1b)
+- Little fixes on responsive
 
 <br><a name="usedtech"></a>
 ## ⚙️ Used technologies:
