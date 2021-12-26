@@ -10,8 +10,8 @@
 [Setup](https://github.com/anonurl/anonurl#setup)<br>
 
 <br><a name="changelog"></a>
-## ♻️ Changelog (v1.0.1b)
-- Little fixes on responsive
+## ♻️ Changelog (v1.0.1c)
+- Little fixes on funcionability
 
 <br><a name="usedtech"></a>
 ## ⚙️ Used technologies:

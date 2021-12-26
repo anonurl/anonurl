@@ -9,7 +9,7 @@ import Loading from '../../assets/loading.gif';
 import { ThemeProvider } from 'styled-components';
 import { light, dark } from '../../styles/themes';
 import { en, pt } from '../../assets/locales';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 
 export default () => {
     useEffect(() => {
@@ -37,9 +37,12 @@ export default () => {
     const handleShorten = async () => {
         const url = document.querySelector('#url');
         const span = document.querySelector('.shortened');
+        const regex = /(http(s)?:\/\/.)?(www\.)?[-a-zA-Z0-9@:%._\+~#=]{2,256}\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/g;
+        const match = regex.test(url.value);
+
         span.innerHTML = '';
 
-        if (url.value.indexOf('http') === -1) {
+        if (!match) {
             alert(lang.home.invalid);
             url.value = '';
         

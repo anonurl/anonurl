@@ -1,6 +1,6 @@
 {
   "name": "anonurl",
-  "version": "1.0.1b",
+  "version": "1.0.1c",
   "license": "MIT",
   "main": "src/index.jsx",
   "scripts": {
