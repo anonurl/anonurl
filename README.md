@@ -1,7 +1,6 @@
 # AnonURL
 
-[API repository](https://github.com/anonurl/anonurl-api)<br>  
-[Discord BOT]() (Upcoming)
+[API repository](https://github.com/anonurl/anonurl-api)<br>
 
 ## 📖 Summary
 [Changelog](https://github.com/anonurl/anonurl#changelog)<br>
@@ -10,8 +9,8 @@
 [Setup](https://github.com/anonurl/anonurl#setup)<br>
 
 <br><a name="changelog"></a>
-## ♻️ Changelog (v1.0.1c)
-- Little fixes on funcionability
+## ♻️ Changelog (v1.0.2)
+- New API config
 
 <br><a name="usedtech"></a>
 ## ⚙️ Used technologies:
