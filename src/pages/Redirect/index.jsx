@@ -17,7 +17,6 @@ export default () => {
         .then(r => setResult(r))
         
         .catch(() => {
-            window.location.href = '/404';
         
         });
     
