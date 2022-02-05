@@ -28,7 +28,7 @@ export default () => {
         <Container>
             <nav>
                 <ul>
-                    <li>&copy; 2021 AnonURL</li>
+                    <li>&copy; 2021-2022 AnonURL</li>
                     <li><a href="https://github.com/anonurl/" target="_blank">{ lang.footer.source }</a></li>
                     <li><a href="mailto:z3ox1s@protonmail.com" target="_blank">{ lang.footer.contact }</a></li>
                     <li><a href="https://www.flaticon.com/" target="_blank">{ lang.footer.flaticon }</a></li>

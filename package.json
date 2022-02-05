@@ -4,7 +4,7 @@
   "license": "MIT",
   "main": "src/index.jsx",
   "scripts": {
-    "build": "react-scripts build",
+    "build": "GENERATE_SOURCEMAP=false react-scripts build",
     "start:build": "serve -l 3000 -s build",
     "start": "react-scripts start"
   },

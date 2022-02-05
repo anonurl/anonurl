@@ -16,8 +16,19 @@ export default () => {
 
     const handleTrack = async () => {
         const track = document.querySelector('#track');
+        const trackValue = String(track.value)
 
-        if (track.value !== '') {
+        if (track !== '') {
+            let id
+
+            if (trackValue.includes("http")) {
+                id = trackValue.split("/")[3]
+            
+            } else {
+                id = track.value
+
+            }
+
             const result = document.querySelector('.result');
             const h2 = document.createElement('h2');
 
@@ -28,7 +39,7 @@ export default () => {
             img.style.marginTop = '20px';
             result.append(br, img);
 
-            await get('https://api-anonurl.herokuapp.com/api/track/' + track.value)
+            await get('https://api-anonurl.herokuapp.com/api/track/' + id)
             
             .then(({ data: r }) => {
                 result.innerHTML = '';

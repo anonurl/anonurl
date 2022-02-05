@@ -9,8 +9,9 @@
 [Setup](https://github.com/anonurl/anonurl#setup)<br>
 
 <br><a name="changelog"></a>
-## ♻️ Changelog (v1.0.2)
-- New API config
+## ♻️ Changelog (v1.0.3)
+- Added URL support on tracking
+- Some fixes
 
 <br><a name="usedtech"></a>
 ## ⚙️ Used technologies:
