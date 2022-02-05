@@ -17,7 +17,7 @@ export default () => {
     
     }, [window]);
 
-    const handleGo = () => window.location.href = result.data.url;
+    const handleGo = () => window.location.href = result.url;
     const handleCancel = () => window.location.href = '/';
 
     return (
