@@ -32,7 +32,7 @@ export const en = {
         resource: "Resource not found"
     },
     redirect: {
-        willbe: "Do you want to be redirected?",
+        willbe: "You will be redirected to:",
         agree: "Agree",
         cancel: "Cancel"
     },
@@ -87,7 +87,7 @@ export const pt = {
         resource: "Página não encontrada"
     },
     redirect: {
-        willbe: "Deseja ser redirecionado?",
+        willbe: "Você será redirecionado para:",
         agree: "Concordo",
         cancel: "Cancelar"
     },

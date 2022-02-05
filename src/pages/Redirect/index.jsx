@@ -13,12 +13,7 @@ export default () => {
     
     useEffect(async () => {
         await get('https://api-anonurl.herokuapp.com/api/redirect' + window.location.pathname)
-        
-        .then(r => setResult(r))
-        
-        .catch(() => {
-        
-        });
+        .then(({ data: r }) => setResult(r))
     
     }, [window]);
 
@@ -29,7 +24,7 @@ export default () => {
         <ThemeProvider theme={ localStorage.getItem('theme') === 'light' ? light : dark }>
             <Container className="container">
                 <Redirect className="app">
-                    <h2>{ lang.redirect.willbe }</h2>
+                    <h2>{ lang.redirect.willbe } { result.url }</h2>
                     <button onClick={() => handleGo()}>{ lang.redirect.agree }</button>
                     <button onClick={() => handleCancel()}>{ lang.redirect.cancel }</button>
                 </Redirect>
