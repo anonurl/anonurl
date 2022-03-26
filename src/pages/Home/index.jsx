@@ -1,4 +1,3 @@
-import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import { Container, ShortenerArea, Shortener, About, Whyuse, Cards } from './style';
 import { post } from 'axios';
@@ -6,20 +5,14 @@ import Anonymous from '../../assets/anonymous.png';
 import Scan from '../../assets/scan.png';
 import Report from '../../assets/report.png';
 import Loading from '../../assets/loading.gif';
-import { ThemeProvider } from 'styled-components';
-import { light, dark } from '../../styles/themes';
 import { en, pt } from '../../assets/locales';
 import { useEffect } from 'react';
+import { ThemeProvider } from 'styled-components';
+import { style } from '../../styles/themes';
 
 export default () => {
     useEffect(() => {
-        const themeStoraged = localStorage.getItem('theme');
         const langStoraged = localStorage.getItem('lang');
-
-        if (!themeStoraged) {
-            localStorage.setItem('theme', 'light');
-
-        }
         
         if (!langStoraged) {
             localStorage.setItem('lang', 'en');
@@ -27,11 +20,8 @@ export default () => {
 
         }
 
-
     }, [window.onload]);
 
-    const theme = localStorage.getItem('theme');
-    document.body.style.backgroundColor = theme === 'light' ? light.bodySecondary : dark.bodySecondary;
     const lang = localStorage.getItem('lang') === 'en' ? en : pt;
 
     const handleShorten = async () => {
@@ -71,7 +61,7 @@ export default () => {
     }
 
     return (
-        <ThemeProvider theme={theme === 'light' ? light : dark}>
+        <ThemeProvider theme={ style }>
             <Header />
             <Container>
                 <ShortenerArea>
@@ -104,7 +94,6 @@ export default () => {
                     </Cards>
                 </About>
             </Container>
-            <Footer />
         </ThemeProvider>
     );
 }

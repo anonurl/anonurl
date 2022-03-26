@@ -1,18 +1,14 @@
-import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import { Container, Tracker } from './style';
 import { get } from 'axios';
 import Loading from '../../assets/loading.gif';
-import { ThemeProvider } from 'styled-components';
-import { dark, light } from '../../styles/themes';
 import { en, pt } from '../../assets/locales';
+import { ThemeProvider } from 'styled-components';
+import { style } from '../../styles/themes';
 
 export default () => {
     const langStoraged = localStorage.getItem('lang');
     const lang = langStoraged === 'en' ? en : pt;
-
-    const theme = localStorage.getItem('theme');
-    document.body.style.backgroundColor = theme === 'light' ? light.bodyPrimary : dark.bodyPrimary;
 
     const handleTrack = async () => {
         const track = document.querySelector('#track');
@@ -35,7 +31,7 @@ export default () => {
             const img = document.createElement('img');                                                                          
             const br = document.createElement('br');                                                                            
             img.src = Loading;                                                                                                                                         
-            img.width = 60;                                                                                                                          
+            img.width = 200;                                                                                                                          
             img.style.marginTop = '20px';
             result.append(br, img);
 
@@ -65,7 +61,7 @@ export default () => {
     }
 
     return (
-        <ThemeProvider theme={ localStorage.getItem('theme') === 'light' ? light : dark }>
+        <ThemeProvider theme={ style }>
             <Header />
             <Container>
                 <Tracker>
@@ -75,7 +71,6 @@ export default () => {
                     <span className="result"></span>
                 </Tracker>
             </Container>
-            <Footer />
         </ThemeProvider>
     );
 }

@@ -1,17 +1,13 @@
-import Footer from '../../components/Footer';
 import Header from '../../components/Header';
 import { Container, Report } from './style';
 import { post } from 'axios';
-import { ThemeProvider } from 'styled-components';
-import { light, dark } from '../../styles/themes';
 import { en, pt } from '../../assets/locales';
+import { ThemeProvider } from 'styled-components';
+import { style } from '../../styles/themes';
 
 export default () => {
     const langStoraged = localStorage.getItem('lang');
     const lang = langStoraged === 'en' ? en : pt;
-
-    const theme = localStorage.getItem('theme');
-    document.body.style.backgroundColor = theme === 'light' ? light.bodyPrimary : dark.bodyPrimary;
 
     const handleSubmit = async () => {
         const report = document.querySelector('#report').value;
@@ -35,7 +31,7 @@ export default () => {
     }
 
     return (
-        <ThemeProvider theme={ localStorage.getItem('theme') === 'light' ? light : dark }>
+        <ThemeProvider theme={ style }>
             <Header />
             <Container>
                 <Report>
@@ -44,7 +40,6 @@ export default () => {
                     <button onClick={() => handleSubmit()}>{ lang.report.button }</button>
                 </Report>
             </Container>
-            <Footer />
         </ThemeProvider>
     );
 }

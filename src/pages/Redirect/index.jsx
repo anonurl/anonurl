@@ -1,9 +1,9 @@
 import { Container, Redirect } from "./style"
 import { get } from 'axios';
 import { useEffect, useState } from "react";
-import { ThemeProvider } from "styled-components";
-import { dark, light } from "../../styles/themes";
 import { en, pt } from '../../assets/locales';
+import { ThemeProvider } from "styled-components";
+import { style } from '../../styles/themes';
 
 export default () => {
     const langStoraged = localStorage.getItem('lang');
@@ -21,7 +21,7 @@ export default () => {
     const handleCancel = () => window.location.href = '/';
 
     return (
-        <ThemeProvider theme={ localStorage.getItem('theme') === 'light' ? light : dark }>
+        <ThemeProvider theme={ style }>
             <Container className="container">
                 <Redirect className="app">
                     <h2>{ lang.redirect.willbe } { result.url }</h2>

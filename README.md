@@ -10,20 +10,23 @@
 
 <br></span>
 ## 📖 Summary
-[Changelog](https://github.com/anonurl/anonurl#changelog)<br>
-[Used technologies](https://github.com/anonurl/anonurl#usedtech)<br>
-[FAQ](https://github.com/anonurl/anonurl#faq)<br>
-[Setup](https://github.com/anonurl/anonurl#setup)<br>
+[Changelog](#changelog)<br>
+[Used technologies](#usedtech)<br>
+[FAQ](#faq)<br>
+[Setup](#setup)<br>
 
 <br><a name="changelog"></a>
-## ♻️ Changelog (v1.0.3)
-- Added URL support on tracking
+## ♻️ Changelog (v1.0.4)
+- Refactor
+- New style
 - Some fixes
 
 <br><a name="usedtech"></a>
 ## ⚙️ Used technologies:
 - NodeJS
 - ReactJS
+- Styled Components
+- React Router DOM
 
 <br><a name="faq"></a>
 ## ❓ FAQ

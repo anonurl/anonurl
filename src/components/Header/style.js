@@ -7,7 +7,7 @@ export const Container = styled.div`
     bottom: 0;
     left: 0;
     right: 0;
-    height: 52px;
+    height: 56px;
     background-color: rgba(15, 15, 15, 0.65);
     
     nav {
@@ -22,7 +22,7 @@ export const Container = styled.div`
 
     nav ul li {
         list-style: none;
-        padding-right: 20px;
+        padding-right: 50px;
         display: inline-block;
         transition: all ease 0.5s;
     }
@@ -40,7 +40,7 @@ export const Container = styled.div`
 
     @media (max-width: 800px) {
         nav ul li {
-            padding-right: 12px;
+            padding-right: 35px;
         }
     }
 `;

@@ -1,14 +1,4 @@
 export const en = {
-    header: {
-        home: "Home",
-        track: "Track",                       
-        report: "Report"
-    },
-    footer: {                                                                                                              
-        source: "Source",
-        contact: "Contact",                                                                             
-        flaticon: "Flaticon"                                                                                               
-    },                                                                                                                       
     home: { 
         shortenerTitle: "Anonymous, free and open-source",
         shortenerSubTitle: "No logs and tracking",
@@ -17,19 +7,13 @@ export const en = {
         invalid: "This URL apparently does'nt exists",
         shortened: "Your shortened URL: ",
         whyuseTitle: "Why use AnonURL",
-        whyuseSubTitle: "Anonymous, free, open-source, easy-to-use, shortened URLs, nothing about logs, security improved...",
+        whyuseSubTitle: "Anonymous, free, open-source, easy-to-use, nothing about logs, security improved...",
         anonymousCard: "We don't keep access logs and who created any shortened URL",
         trackCard: "Suspicious of any URL? Check all about on ",
         reportCard: "You can report any malicious shortened URL on "
     },
     config: {
-        theme: "Theme:",
-        light: "Light",
-        dark: "Dark",
         language: "Language:"
-    },
-    notfound: {
-        resource: "Resource not found"
     },
     redirect: {
         willbe: "You will be redirected to:",
@@ -54,11 +38,6 @@ export const en = {
 }
     
 export const pt = {
-    header: {
-        home: "Home",
-        track: "Rastreio",
-        report: "Reportar"
-    },
     footer: {                                                                                                              
         source: "Fonte",
         contact: "Contato",
@@ -72,19 +51,13 @@ export const pt = {
         invalid: "Essa URL aparentemente não existe",
         shortened: "Sua URL encurtada: ",
         whyuseTitle: "Por quê usar AnonURL",
-        whyuseSubTitle: "Anônimo, grátis, código-aberto, fácil de usar, encurtar URLs, nada de logs, segurança...",
+        whyuseSubTitle: "Anônimo, grátis, código-aberto, fácil de usar, nada de logs, segurança...",
         anonymousCard: "Nós não armazenamos logs de acesso ou quem criou qualquer URL encurtada",
         trackCard: "Suspeita de alguma URL? Cheque dados básicos em ",
         reportCard: "Voce pode reportar qualquer URL malicioso em "
     },
     config: {
-        theme: "Tema:",
-        light: "Claro",
-        dark: "Escuro",
         language: "Língua:"
-    },
-    notfound: {
-        resource: "Página não encontrada"
     },
     redirect: {
         willbe: "Você será redirecionado para:",

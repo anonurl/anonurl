@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    background-color: ${props => props.theme.bodyPrimary};
+    background-color: ${props => props.theme.bodySecondary};
     float: none;
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
-    padding-top: 10%;
+    padding-top: 13%;
     text-align: center;
 
     @media (max-width: 800px) {
@@ -17,19 +17,19 @@ export const Container = styled.div`
 `;
 
 export const Config = styled.div`
-    background-color: ${props => props.theme.bodySecondary};
-    color: ${props => props.theme.fontColor};
+    background-color: ${props => props.theme.bodyPrimary};
+    color: ${props => props.theme.inputColor};
     width: 60%;
     text-align: center;
     margin: auto;
     border-radius: 5px;
     padding-bottom: 30px;
-    box-shadow: 1px 1px 3px 1px ${props => props.theme.bodySecondary};
+    box-shadow: 0 0 100px -10px ${props => props.theme.bodyPrimary};
 
     h2 {
         font: 12pt 'JetBrains Mono', monospace;
-        color: ${props => props.theme.titleColor};
         width: 80%;
+        font-weight: 500;
         margin: 0 auto;
     }
 
@@ -42,9 +42,9 @@ export const Config = styled.div`
     }
 
     select {
-        margin-top: 10px;
+        margin-top: 20px;
         border: none;
-        background-color: ${props => props.theme.bodyPrimary};
+        background-color: ${props => props.theme.bodyTerciary};
         padding: 7px;
         border-radius: 5px;
         color: white;
