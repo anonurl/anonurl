@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { en, pt } from '../../assets/locales';
 import { ThemeProvider } from "styled-components";
 import { style } from '../../styles/themes';
+import Header from '../../components/Header';
 
 export default () => {
     const langStoraged = localStorage.getItem('lang');
@@ -22,6 +23,7 @@ export default () => {
 
     return (
         <ThemeProvider theme={ style }>
+            <Header />
             <Container className="container">
                 <Redirect className="app">
                     <h2>{ lang.redirect.willbe } { result.url }</h2>

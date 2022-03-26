@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-    background-color: ${props => props.theme.bodyPrimary};
+    background-color: ${props => props.theme.bodySecondary};
     color: ${props => props.theme.fontColor};
     float: none;
     position: absolute;
@@ -9,7 +9,7 @@ export const Container = styled.div`
     right: 0;
     top: 0;
     bottom: 0;
-    padding-top: 10%;
+    padding-top: 13%;
     text-align: center;
 
     @media (max-width: 800px) {
@@ -18,19 +18,20 @@ export const Container = styled.div`
 `;
 
 export const Redirect = styled.div`
-    background-color: ${props => props.theme.bodySecondary};
+    background-color: ${props => props.theme.bodyPrimary};
     color: ${props => props.theme.inputColor};
     width: 60%;
     text-align: center;
     margin: auto;
-    border-radius: 5px;
+    border-radius: 4px;
     padding-bottom: 30px;
-    box-shadow: 1px 1px 3px 1px ${props => props.theme.bodySecondary};
+    box-shadow: 0 0 100px -10px ${props => props.theme.bodyPrimary};
 
     h2 {
-        font: 12pt 'JetBrains Mono', monospace;
-        color: ${props => props.theme.titleColor};
+        font: 14pt 'JetBrains Mono', monospace;
+        color: ${props => props.theme.inputColorColor};
         width: 80%;
+        font-weight: 500;
         margin: 0 auto;
     }
 
@@ -41,18 +42,19 @@ export const Redirect = styled.div`
     button {
         border: none;
         border-radius: 5px;
-        background-color: ${props => props.theme.bodyPrimary};
-        padding: 9px;
-        color: ${props => props.theme.inputColor};
+        background-color: transparent;
+        padding: 10px 15px;
+        margin: 30px 10px 10px;
         font: 12pt 'JetBrains Mono', monospace;
         transition: all ease 0.5s;
         cursor: pointer;
-        margin: 10px 10px 0 10px;
+        background-color: ${props => props.theme.bodyTerciary};
+        color: ${props => props.theme.inputColor}
     }
 
     button:hover {
-        transform: scale(1.1);
-        opacity: 0.8;
+        transform: scale(1.05);
+        opacity: 0.85;
     }
 
     @media (max-width: 800px) {
