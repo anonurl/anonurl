@@ -17,6 +17,31 @@ export const ShortenerArea = styled.div`
     bottom: 0;
     padding-top: 12.1%;
     text-align: center;
+
+    img {
+        position: absolute;
+        top: 70vh;
+        right: 0;
+        left: 0;
+    }
+
+    @media (max-width: 1000px) {
+        img {
+            top: 80vh;
+        }
+    }
+
+    @media (max-width: 800px) {
+        img {
+            top: 85vh;
+        }
+    }
+    
+    @media (max-width: 600px) {
+        img {
+            opacity: 0;
+        }
+    }
 `;
 
 export const Shortener = styled.div`

@@ -30,8 +30,8 @@ export default () => {
 
             const img = document.createElement('img');                                                                          
             const br = document.createElement('br');                                                                            
-            img.src = Loading;                                                                                                                                         
-            img.width = 200;                                                                                                                          
+            img.src = Loading;
+            img.width = 200;
             img.style.marginTop = '20px';
             result.append(br, img);
 

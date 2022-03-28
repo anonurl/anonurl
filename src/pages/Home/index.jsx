@@ -5,6 +5,7 @@ import Anonymous from '../../assets/anonymous.png';
 import Scan from '../../assets/scan.png';
 import Report from '../../assets/report.png';
 import Loading from '../../assets/loading.gif';
+import Wave from '../../assets/wave.svg';
 import { en, pt } from '../../assets/locales';
 import { useEffect } from 'react';
 import { ThemeProvider } from 'styled-components';
@@ -40,7 +41,7 @@ export default () => {
             const img = document.createElement('img');
             const br = document.createElement('br');
             img.src = Loading;
-            img.width = 60;
+            img.width = 200;
             img.style.marginTop = '20px';
             span.append(br, img);
 
@@ -72,6 +73,7 @@ export default () => {
                         <button onClick={() => handleShorten()}>{ lang.home.button }</button>
                         <span className="shortened"></span>
                     </Shortener>
+                    <img src={ Wave } class="wave" />
                 </ShortenerArea>
                 <About>
                     <h1>{ lang.home.whyuseTitle }</h1>
