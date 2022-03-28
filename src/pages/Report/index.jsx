@@ -1,4 +1,5 @@
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import { Container, Report } from './style';
 import { post } from 'axios';
 import { en, pt } from '../../assets/locales';
@@ -40,6 +41,7 @@ export default () => {
                     <button onClick={() => handleSubmit()}>{ lang.report.button }</button>
                 </Report>
             </Container>
+            <Footer />
         </ThemeProvider>
     );
 }

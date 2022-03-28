@@ -1,4 +1,17 @@
 export const en = {
+    footer: {
+        useful: 'Useful',
+        source: 'Source',
+        contact: 'Contact',
+        images: 'Images',
+        icons: 'Icons',
+        navigate: 'Navigate',
+        home: 'Home',
+        track: 'Track',
+        report: 'Report',
+        settings: 'Settings',
+        message: "Made with 💜 by "
+    },
     home: { 
         shortenerTitle: "Anonymous, free and open-source",
         shortenerSubTitle: "No logs and tracking",
@@ -38,11 +51,19 @@ export const en = {
 }
     
 export const pt = {
-    footer: {                                                                                                              
-        source: "Fonte",
-        contact: "Contato",
-        flaticon: "Flaticon"
-    },                                                                                                                       
+    footer: {
+        useful: 'Útil',
+        source: 'Código',
+        contact: 'Contato',
+        images: 'Imagens',
+        icons: 'Ícones',
+        navigate: 'Navegue',
+        home: 'Home',
+        track: 'Rastreio',
+        report: 'Reporte',
+        settings: 'Ajustes',
+        message: "Feito com 💜 por "
+    },
     home: {
         shortenerTitle: "Anônimo, grátis e código-aberto",                      
         shortenerSubTitle: "Sem logs e rastreio",

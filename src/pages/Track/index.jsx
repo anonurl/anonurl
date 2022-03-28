@@ -1,4 +1,5 @@
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 import { Container, Tracker } from './style';
 import { get } from 'axios';
 import Loading from '../../assets/loading.gif';
@@ -71,6 +72,7 @@ export default () => {
                     <span className="result"></span>
                 </Tracker>
             </Container>
+            <Footer />
         </ThemeProvider>
     );
 }

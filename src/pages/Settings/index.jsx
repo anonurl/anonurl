@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Header from "../../components/Header";
+import Footer from "../../components/Footer";
 import { Container, Config } from './style';
 import { en, pt } from '../../assets/locales';
 import { ThemeProvider } from "styled-components";
@@ -47,6 +48,7 @@ export default () => {
                     </select>
                 </Config>
             </Container>
+            <Footer />
         </ThemeProvider>
     );
 }

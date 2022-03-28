@@ -19,24 +19,22 @@ export const ShortenerArea = styled.div`
     text-align: center;
 
     img {
-        position: absolute;
-        top: 70vh;
-        right: 0;
-        left: 0;
+        position: relative;
+        top: 120px;
     }
 
     @media (max-width: 1000px) {
         img {
-            top: 80vh;
+            top: 250px;
         }
     }
 
     @media (max-width: 800px) {
         img {
-            top: 85vh;
+            top: 200px;
         }
     }
-    
+
     @media (max-width: 600px) {
         img {
             opacity: 0;
@@ -146,6 +144,8 @@ export const About = styled.div`
     }
 
     @media (max-width: 800px) {
+        min-height: 200vh;
+
         h1 {
             font-size: 25pt;
         }

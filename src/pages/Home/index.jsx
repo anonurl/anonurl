@@ -10,6 +10,7 @@ import { en, pt } from '../../assets/locales';
 import { useEffect } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { style } from '../../styles/themes';
+import Footer from '../../components/Footer';
 
 export default () => {
     useEffect(() => {
@@ -96,6 +97,7 @@ export default () => {
                     </Cards>
                 </About>
             </Container>
+            <Footer />
         </ThemeProvider>
     );
 }

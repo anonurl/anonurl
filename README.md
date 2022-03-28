@@ -1,3 +1,4 @@
+<br><br>
 [API repository](https://github.com/anonurl/anonurl-api)<br>
 
 <br><br>
@@ -15,8 +16,9 @@
 
 <br><a name="changelog"></a>
 ## ♻️ Changelog (v1.0.4a)
+- Added a new footer
+- Added waves to home page
 - Some fixes
-- Added wave for home
 
 <br><a name="usedtech"></a>
 ## ⚙️ Used technologies:

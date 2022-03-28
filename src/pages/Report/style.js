@@ -49,7 +49,7 @@ export const Report = styled.div`
         font: 12pt 'JetBrains Mono', monospace;
         background-color: ${props => props.theme.bodySecondary};
         border: none;
-        color: ${props => props.theme.fontColor};
+        color: ${props => props.theme.inputColor};
     }
 
     button {

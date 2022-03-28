@@ -5,6 +5,7 @@ import { en, pt } from '../../assets/locales';
 import { ThemeProvider } from "styled-components";
 import { style } from '../../styles/themes';
 import Header from '../../components/Header';
+import Footer from '../../components/Footer';
 
 export default () => {
     const langStoraged = localStorage.getItem('lang');
@@ -14,7 +15,7 @@ export default () => {
     
     useEffect(async () => {
         await get('https://api-anonurl.herokuapp.com/api/redirect' + window.location.pathname)
-        .then(({ data: r }) => setResult(r))
+            .then(({ data: r }) => setResult(r));
     
     }, [window]);
 
@@ -31,6 +32,7 @@ export default () => {
                     <button onClick={() => handleCancel()}>{ lang.redirect.cancel }</button>
                 </Redirect>
             </Container>
+            <Footer />
         </ThemeProvider>
     )
 }
