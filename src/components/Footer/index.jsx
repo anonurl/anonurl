@@ -42,7 +42,7 @@ export default () => {
                         <li><Link to="/settings">{ lang.footer.settings }</Link></li>
                     </ul>
                 </section>
-                <p>&copy; 2022 AnonURL | { lang.footer.message } <a href="https://github.com/z3oxs">z3oxs</a></p>
+                <p>&copy; 2022 WandalTech URL Shorter | { lang.footer.message } <a href="https://wandal.tech">Wandal</a></p>
             </Footer>
         </ThemeProvider>
     );
