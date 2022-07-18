@@ -52,12 +52,12 @@ export const en = {
     
 export const pt = {
     footer: {
-        useful: 'Útil',
-        source: 'Código',
-        contact: 'Contato',
-        images: 'Imagens',
-        icons: 'Ícones',
-        navigate: 'Navegue',
+        useful: 'Kullanışlı',
+        source: 'Açık Kaynak',
+        contact: 'İletişim',
+        images: 'Fotoğraflar',
+        icons: 'İkonlar',
+        navigate: 'Navigasyon',
         home: 'Ana Sayfa',
         track: 'URL Bul',
         report: 'Raporla',
@@ -86,18 +86,18 @@ export const pt = {
         cancel: "Cancelar"
     },
     report: {
-        title: "Você suspeita de alguma URL? Mande uma mensagem para nós!",
-        placeholder: "Insira a mensagem",
-        button: "Enviar reporte",
-        empty: "Você não pode enviar uma mensagem vazia!",
-        message: "Obrigado pelo reporte, isso ajudará nós a manter a plataforma mais segura!"
+        title: "Herhangi bir sorununuz var ise lütfen aşağıdan bize belirtin!",
+        placeholder: "Mesajınızı girniz: ",
+        button: "Gönder",
+        empty: "Lütfen bir mesaj giriniz!",
+        message: "Geri Bildiriminiz için teşekkürler! En yakın zamanda geri döneceğiz!"
     },
     track: {
-        title: "Rastreie qualquer ID ou URL",
-        placeholder: "Insira o ID ou URL",
-        button: "Buscar",
-        empty: "Insira um ID ou URL válido!",
-        creation: "Data de criação: ",
-        notfound: "ID/URL não encontrado no banco de dados."
+        title: "URL/ID Sorgula",
+        placeholder: "ID/URL yi giriniz: ",
+        button: "Arat",
+        empty: "Lütfen doğru bir URL/ID girin! ",
+        creation: "Oluşturulma tarihi:  ",
+        notfound: "Sistemde böyle bir ID/URL yok"
     }
 }
