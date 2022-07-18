@@ -13,8 +13,8 @@ export const en = {
         message: "Made with 💜 by "
     },
     home: { 
-        shortenerTitle: "Anonymous, free and open-source",
-        shortenerSubTitle: "No logs and tracking",
+        shortenerTitle: "WandalTech URL Shorter",
+        shortenerSubTitle: "No Logs!",
         placeholder: "Enter the link",                                                         
         button: "Shorten",
         invalid: "This URL apparently does'nt exists",
@@ -58,17 +58,17 @@ export const pt = {
         images: 'Imagens',
         icons: 'Ícones',
         navigate: 'Navegue',
-        home: 'Home',
-        track: 'Rastreio',
-        report: 'Reporte',
-        settings: 'Ajustes',
-        message: "Feito com 💜 por "
+        home: 'Ana Sayfa',
+        track: 'URL Bul',
+        report: 'Raporla',
+        settings: 'Ayarlar',
+        message: "Made it 💜 by "
     },
     home: {
-        shortenerTitle: "Anônimo, grátis e código-aberto",                      
-        shortenerSubTitle: "Sem logs e rastreio",
-        placeholder: "Insira o link",
-        button: "Encurtar",
+        shortenerTitle: "WandalTech URL Kısaltıcı",                      
+        shortenerSubTitle: "Kayıt tutulmamaktadır.",
+        placeholder: "Kısaltılacak linki giriniz",
+        button: "Kısalt",
         invalid: "Essa URL aparentemente não existe",
         shortened: "Sua URL encurtada: ",
         whyuseTitle: "Por quê usar AnonURL",
