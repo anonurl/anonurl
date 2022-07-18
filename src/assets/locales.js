@@ -81,9 +81,9 @@ export const pt = {
         language: "Dil: "
     },
     redirect: {
-        willbe: "Você será redirecionado para:",
-        agree: "Concordo",
-        cancel: "Cancelar"
+        willbe: "Gideceğiniz Link: ",
+        agree: "Devam Et",
+        cancel: "İptal"
     },
     report: {
         title: "Herhangi bir sorununuz var ise lütfen aşağıdan bize belirtin!",
