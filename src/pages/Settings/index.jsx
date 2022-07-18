@@ -44,7 +44,7 @@ export default () => {
                     <h2>{ actualLang.config.language }</h2>
                     <select id="langSelector" onChange={() => handleLang()}>
                         <option value="en">English</option>
-                        <option value="pt">Português</option>
+                        <option value="pt">Türkçe</option>
                     </select>
                 </Config>
             </Container>
