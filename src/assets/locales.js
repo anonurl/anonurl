@@ -13,8 +13,8 @@ export const en = {
         message: "Made with 💜 by "
     },
     home: { 
-        shortenerTitle: "Anonymous, free and open-source",
-        shortenerSubTitle: "No logs and tracking",
+        shortenerTitle: "WandalTech URL Shorter",
+        shortenerSubTitle: "No Logs!",
         placeholder: "Enter the link",                                                         
         button: "Shorten",
         invalid: "This URL apparently does'nt exists",
@@ -52,52 +52,52 @@ export const en = {
     
 export const pt = {
     footer: {
-        useful: 'Útil',
-        source: 'Código',
-        contact: 'Contato',
-        images: 'Imagens',
-        icons: 'Ícones',
-        navigate: 'Navegue',
-        home: 'Home',
-        track: 'Rastreio',
-        report: 'Reporte',
-        settings: 'Ajustes',
-        message: "Feito com 💜 por "
+        useful: 'Kullanışlı',
+        source: 'Açık Kaynak',
+        contact: 'İletişim',
+        images: 'Fotoğraflar',
+        icons: 'İkonlar',
+        navigate: 'Navigasyon',
+        home: 'Ana Sayfa',
+        track: 'URL Bul',
+        report: 'Raporla',
+        settings: 'Ayarlar',
+        message: "Made it 💜 by "
     },
     home: {
-        shortenerTitle: "Anônimo, grátis e código-aberto",                      
-        shortenerSubTitle: "Sem logs e rastreio",
-        placeholder: "Insira o link",
-        button: "Encurtar",
-        invalid: "Essa URL aparentemente não existe",
-        shortened: "Sua URL encurtada: ",
-        whyuseTitle: "Por quê usar AnonURL",
-        whyuseSubTitle: "Anônimo, grátis, código-aberto, fácil de usar, nada de logs, segurança...",
-        anonymousCard: "Nós não armazenamos logs de acesso ou quem criou qualquer URL encurtada",
-        trackCard: "Suspeita de alguma URL? Cheque dados básicos em ",
-        reportCard: "Voce pode reportar qualquer URL malicioso em "
+        shortenerTitle: "WandalTech URL Kısaltıcı",                      
+        shortenerSubTitle: "Kayıt tutulmamaktadır.",
+        placeholder: "Kısaltılacak linki giriniz",
+        button: "Kısalt",
+        invalid: "Hatalı URL Girdiniz",
+        shortened: "URL Başarıyla kısaltıldı: ",
+        whyuseTitle: "Neden WandalTech URL Shorter ı kullanmalısınız",
+        whyuseSubTitle: "Anonymous, free, open-source, easy-to-use, nothing about logs, security improved...",
+        anonymousCard: "Sistemimizde herhangi bir log tutmuyoruz!",
+        trackCard: "Eğer bir url nin nereye gittiğini bilmiyor iseniz sorgulayabilirsiniz! ",
+        reportCard: "Her türlü şeyi bize raporlayabilirsiniz! "
     },
     config: {
-        language: "Língua:"
+        language: "Dil: "
     },
     redirect: {
-        willbe: "Você será redirecionado para:",
-        agree: "Concordo",
-        cancel: "Cancelar"
+        willbe: "Gideceğiniz Link: ",
+        agree: "Devam Et",
+        cancel: "İptal"
     },
     report: {
-        title: "Você suspeita de alguma URL? Mande uma mensagem para nós!",
-        placeholder: "Insira a mensagem",
-        button: "Enviar reporte",
-        empty: "Você não pode enviar uma mensagem vazia!",
-        message: "Obrigado pelo reporte, isso ajudará nós a manter a plataforma mais segura!"
+        title: "Herhangi bir sorununuz var ise lütfen aşağıdan bize belirtin!",
+        placeholder: "Mesajınızı girniz: ",
+        button: "Gönder",
+        empty: "Lütfen bir mesaj giriniz!",
+        message: "Geri Bildiriminiz için teşekkürler! En yakın zamanda geri döneceğiz!"
     },
     track: {
-        title: "Rastreie qualquer ID ou URL",
-        placeholder: "Insira o ID ou URL",
-        button: "Buscar",
-        empty: "Insira um ID ou URL válido!",
-        creation: "Data de criação: ",
-        notfound: "ID/URL não encontrado no banco de dados."
+        title: "URL/ID Sorgula",
+        placeholder: "ID/URL yi giriniz: ",
+        button: "Arat",
+        empty: "Lütfen doğru bir URL/ID girin! ",
+        creation: "Oluşturulma tarihi:  ",
+        notfound: "Sistemde böyle bir ID/URL yok"
     }
 }
