@@ -69,16 +69,16 @@ export const pt = {
         shortenerSubTitle: "Kayıt tutulmamaktadır.",
         placeholder: "Kısaltılacak linki giriniz",
         button: "Kısalt",
-        invalid: "Essa URL aparentemente não existe",
-        shortened: "Sua URL encurtada: ",
-        whyuseTitle: "Por quê usar AnonURL",
-        whyuseSubTitle: "Anônimo, grátis, código-aberto, fácil de usar, nada de logs, segurança...",
-        anonymousCard: "Nós não armazenamos logs de acesso ou quem criou qualquer URL encurtada",
-        trackCard: "Suspeita de alguma URL? Cheque dados básicos em ",
-        reportCard: "Voce pode reportar qualquer URL malicioso em "
+        invalid: "Hatalı URL Girdiniz",
+        shortened: "URL Başarıyla kısaltıldı: ",
+        whyuseTitle: "Neden WandalTech URL Shorter ı kullanmalısınız",
+        whyuseSubTitle: "Anonymous, free, open-source, easy-to-use, nothing about logs, security improved...",
+        anonymousCard: "Sistemimizde herhangi bir log tutmuyoruz!",
+        trackCard: "Eğer bir url nin nereye gittiğini bilmiyor iseniz sorgulayabilirsiniz! ",
+        reportCard: "Her türlü şeyi bize raporlayabilirsiniz! "
     },
     config: {
-        language: "Língua:"
+        language: "Dil: "
     },
     redirect: {
         willbe: "Você será redirecionado para:",
