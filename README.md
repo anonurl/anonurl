@@ -1,12 +1,6 @@
 <br><br>
 [API repository](https://github.com/anonurl/anonurl-api)<br>
 
-<br><br>
-## 🪙 Donations
-**If you liked my creation and want to contribute:**
-- BTC: bc1q4urlxker5tae2nmpwzr2zsadtd9ay5mwcc44dn
-- ETH: 0xD5404671A5210e2FC7aa72ACE6000e3921A0dDE4
-
 <br></br>
 ## 📖 Summary
 [Changelog](#changelog)<br>
